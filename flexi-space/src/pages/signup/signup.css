@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #f4f4f8;
+}
+
+/* Signup Container */
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section */
+.signup-left {
+  flex: 1;
+  background: linear-gradient(to bottom right, #0066cc, #003366);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo-container p {
+  font-size: 18px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Right Section */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signup-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn i {
+  margin-right: 10px;
+}
+
+.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.google:hover {
+  background-color: #c33a2d;
+}
+
+.facebook {
+  background-color: #4267b2;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #365899;
+}
+
+/* Form Styles */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Login Link */
+.login-link {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframes for fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

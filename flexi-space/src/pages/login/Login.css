@@ -1,0 +1,105 @@
+/* Body and Background */
+body.login-background {
+  background: url('../../images_videos/work.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Login Container */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Lighter background for better contrast */
+  align-items: center;
+  max-width: 450px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px); /* Hover effect for modern interaction */
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group (Label and Input) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.btn-submit {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight hover animation */
+}
+
+/* Links (Register and Forgot Password) */
+.register-link, .forgot-password {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link a, .forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover, .forgot-password a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

@@ -1,0 +1,50 @@
+/* Conteneur principal */
+.header {
+    background-color: #00274d; /* Couleur d'arrière-plan */
+    padding: 10px 20px;
+  }
+  
+  /* Barre de navigation */
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Répartir les éléments */
+  }
+  
+  /* Logo agrandi aligné à gauche */
+  .logo {
+    flex: 1; /* Réserve de l'espace pour le logo */
+  }
+  
+  .logo-image {
+    width: 175px; /* Augmenter la taille du logo */
+    height: auto;
+  }
+  
+  /* Liens de navigation centrés et légèrement réduits */
+  .nav-links {
+    display: flex;
+    gap: 15px; /* Espacement entre les liens */
+    justify-content: center; /* Centrer les liens */
+    flex: 1; /* Espace pour centrer les liens */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px; /* Réduire légèrement la taille du texte */
+  }
+  
+  /* Icône utilisateur alignée à droite */
+  .user-icon-link {
+    flex: 1; /* Réserve de l'espace à droite */
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+  }
+  
+  .user-icon {
+    font-size: 24px;
+    color:white;
+  }
+  

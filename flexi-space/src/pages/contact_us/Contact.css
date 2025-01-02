@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-left {
+  background: url("../../images_videos/k.avif") no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-right {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.contact-left:hover,
+.contact-right:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-left h2,
+.contact-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #c7d2fe;
+}
+
+hr {
+  width: 60%;
+  border: 0;
+  border-top: 2px solid white;
+  margin: 2rem auto;
+}
+
+/* Right Section Styles */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+}
+
+form textarea {
+  resize: none;
+}
+
+.file-input {
+  margin: 1rem 0;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  color: #4c6ef5;
+  background-color: #edf2ff;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #dbe4ff;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4c6ef5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #3b5bdb;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: 1 1 100%;
+  }
+}

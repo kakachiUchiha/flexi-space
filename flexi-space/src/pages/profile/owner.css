@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #00274d;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* User Actions */
+.user-actions {
+  margin-left: auto;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background: #b92b38;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  text-align: center;
+  padding: 20px;
+  background: #00274d;
+  color: white;
+  border-radius: 10px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.dashboard-header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  border-radius: 50%;
+}
+
+.profile-card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.profile-card p {
+  margin: 0;
+}
+
+/* Sections */
+.dashboard-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+  margin-bottom: 20px;
+  color: #00274d;
+  text-align: center;
+}
+
+/* Reservations Grid */
+.reservations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reservation-card {
+  background: #00274d;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Workspace Grid */
+.workspace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.workspace-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workspace-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.workspace-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.workspace-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.workspace-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00274d;
+}
+
+.workspace-info p {
+  margin: 5px 0;
+  color: black;
+}
+
+/* Buttons */
+.add-workspace-button,
+.modify-workspace-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #f0a500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-workspace-button:hover,
+.modify-workspace-button:hover {
+  background: #cf8b00;
+}
+
+.modify-workspace-button {
+  background-color: #005f73;
+  margin-top: 10px;
+}
+
+.modify-workspace-button:hover {
+  background-color: #003d4f;
+}
+
+/* Footer */
+footer {
+  background-color: #00274d;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #f0a500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #cf8b00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .workspace-card {
+    grid-template-columns: 1fr;
+  }
+}
